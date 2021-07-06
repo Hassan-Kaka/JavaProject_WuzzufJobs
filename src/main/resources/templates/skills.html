@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>skills</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>skills</th>
+        <th>count</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="area: ${message}">
+        <td th:text="${area.key}">&nbsp;</td>
+        <td th:text="${area.value}">&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</body>
+</html>

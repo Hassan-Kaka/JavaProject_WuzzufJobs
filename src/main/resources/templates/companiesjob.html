@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Companies Job</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Company Name</th>
+        <th>Jobs Count</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="area: ${message}">
+        <td th:text="${area.key}">&nbsp;</td>
+        <td th:text="${area.value}">&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+
+<img src="\PieChart.PNG" height= "500px" width="500px" alt="alt"/>
+</body>
+</html>
